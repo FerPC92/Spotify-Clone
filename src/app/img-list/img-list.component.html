@@ -1,0 +1,51 @@
+<!-- The sidebar -->
+<div class="sidebar"*ngIf="this._mainService.flagList ? true : false">
+    <h1 class="title-home-two"><img class="spoti-icon-two" src="../../assets/spoti3.png" alt="">Neotify! </h1>
+    <a href="#news">Inicio</a>
+    <a href="#contact">Buscar</a>
+    <a href="#about">Biblioteca</a>
+    <a href="#news" class="playlist">Playlist</a>
+    <a href="#contact">Albums</a>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" *ngIf="this._mainService.flagList ? true : false">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="list-nav">hgfhfgh</li>
+         <li class="list-nav">SELECCIONADOS</li>
+         <li class="list-nav">POSTCAST</li>
+         <li class="list-nav">LISTA DE EXITOS</li>
+         <li class="list-nav">GENEROS Y ESTADOS DE ANIMO</li>
+         <li class="list-nav">NOVEDADES</li>
+         
+        </ul>
+      </div>
+    </nav>
+  
+  <!-- Page content -->
+  <div class="content"*ngIf="this._mainService.flagList ? true : false">
+<table >
+  <th>
+    <tr *ngFor="let element of this._mainService.listado">
+      <td  colspan="3" (click)="displayPlay(element['id'])">
+        <h4 class="table-song"><img class="key" src="../../assets/key1.png" alt="">{{element["song"]}}</h4>
+       <h6 class="table-artist"> {{element["artist"]}} - {{element["album"]}}</h6>
+      </td>
+      
+    </tr>
+    
+  </th>
+</table>
+</div>
+
+
+
+
+
+
+<!--*ngIf="this._mainService.flagList ? true : false""-->

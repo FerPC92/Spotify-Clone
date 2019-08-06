@@ -1,0 +1,118 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #1c1c1f;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 10;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: #88898c;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: white;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: grey;
+    color: white;
+  }
+  .playlist{
+      background: #989898;
+      color: white !important;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    /*padding: 1px 16px;*/
+    height: 450px;
+  }
+
+  /*icon*/
+  .spoti-icon-two{
+      height: 37px;
+      filter: invert(100%) ;
+      padding-right: 10px;
+  }
+
+  .title-home-two{
+      color:white;
+      font-family: sans-serif;
+      font-size: 35px;
+      text-align: center;
+      padding-top: 15px;
+      
+  }
+
+  .navbar{
+    z-index: 0 !important;
+    background: #1c1c1f !important;
+    color: #989898 !important;
+  }
+
+  .list-nav{
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+
+  /* todo*/
+  div.content table{
+      padding-top: 40px;
+      background: #1c1c1f;
+      height: 750px; /*cambiar,genera scroll*/
+      width: 100%;
+  }
+
+  .table-song{
+    color: rgb(120, 212, 101);
+    letter-spacing: 3px;
+    font-family: sans-serif
+
+  }
+  .table-artist{
+    color: rgb(153, 153, 153);
+    letter-spacing: 3px
+  }
+
+  .key{
+    filter: invert(100%)
+  }
+
+  div.content th{
+   padding-top: 50px;
+   padding-left: 40px;
+  }
+
+  .table-song:hover{
+    color: white;
+    cursor: pointer;
+  }
+  .table-artist:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+
+ /* div.content td:hover{
+    background: #303030;
+   }*/
+  
+  
