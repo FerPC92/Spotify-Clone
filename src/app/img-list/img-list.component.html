@@ -1,6 +1,6 @@
 <!-- The sidebar -->
 <div class="sidebar"*ngIf="this._mainService.flagList ? true : false">
-    <h1 class="title-home-two"><img class="spoti-icon-two" src="../../assets/spoti3.png" alt="">Neotify! </h1>
+    <h1 class="title-home-two"><img class="spoti-icon-two" [src]="imgSpotiLogo" alt="">Neotify! </h1>
     <a href="#news">Inicio</a>
     <a href="#contact">Buscar</a>
     <a href="#about">Biblioteca</a>
@@ -33,7 +33,7 @@
   <th>
     <tr *ngFor="let element of this._mainService.listado">
       <td  colspan="3" (click)="displayPlay(element['id'])">
-        <h4 class="table-song"><img class="key" src="../../assets/key1.png" alt="">{{element["song"]}}</h4>
+        <h4 class="table-song"><img class="key" [src]="imgKey" alt="">{{element["song"]}}</h4>
        <h6 class="table-artist"> {{element["artist"]}} - {{element["album"]}}</h6>
       </td>
       

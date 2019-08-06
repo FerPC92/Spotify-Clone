@@ -1,7 +1,7 @@
 <div class="container" *ngIf="this._mainService.flagPlay ? true : false">
   <div class="row row-title">
     <div class="col-12 col-title">
-<img src="../../assets/arrow.png"  class="down-arrow" alt="down-arrow">
+<img [src]="imgArrow"  class="down-arrow" alt="down-arrow">
 <h3 class="title-main">Playlist</h3>
 <h3 class="points">. . .</h3>
 
@@ -23,7 +23,7 @@
       <h5 class="song-inf">{{this._mainService.listado[this._mainService.id]["artist"]}}</h5>
     </div>
     <div class="heart-icon">
-      <img src="../../assets/heart2.png"  class="heart" alt="heart">
+      <img [src]="imgheart"  class="heart" alt="heart">
     </div>
     </div>
     <!--end col-play-->
@@ -31,12 +31,12 @@
   <!--end row-->
   <div class="row row-audio">
       <div class="col-12 col-audio">
-          <img class="circles" src="../../assets/circle-random2.png" alt="">
-        <img class="skip" src="../../assets/skip-back-final.png" alt="">
-        <img class="play" src="../../assets/playfinal.png" alt="" *ngIf="show" (click)="reproduce()">
-        <img class="pause" src="../../assets/pausefinal.png" alt="" *ngIf="!show" (click)="pause()">
-        <img class="skip" src="../../assets/skip-end-final.png" alt="">
-        <img class="circles" src="../../assets/shufle3.png" alt="">
+          <img class="circles" [src]="imgRandom" alt="">
+        <img class="skip" [src]="imgSkipBack" alt="">
+        <img class="play" [src]="imgPlay" alt="" *ngIf="show" (click)="reproduce()">
+        <img class="pause" [src]="imgPause" alt="" *ngIf="!show" (click)="pause()">
+        <img class="skip" [src]="imgSkipEnd" alt="">
+        <img class="circles" [src]="imgShuffle" alt="">
 
           <audio class="audio" controls>
               <source [src]="this._mainService.listado[this._mainService.id]['src']" type="audio/mpeg">
