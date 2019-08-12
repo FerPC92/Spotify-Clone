@@ -1,5 +1,7 @@
 # Spotify Clone Made With Angular 7!
 
+link to gh Pages : https://ferpc92.github.io/Spotify-Clone/
+
 <img src="src/assets/preview1.png">
 
 <hr>
